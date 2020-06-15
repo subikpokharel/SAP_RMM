@@ -5,12 +5,12 @@ import java.math.BigDecimal;
 public class RMMDataResponse {
 
 	private BigDecimal rmm;
-	private BigDecimal upv;
+	private BigDecimal upb;
 
-	public RMMDataResponse(BigDecimal rmm, BigDecimal upv) {
+	public RMMDataResponse(BigDecimal rmm, BigDecimal upb) {
 		super();
 		this.rmm = rmm;
-		this.upv = upv;
+		this.upb = upb;
 	}
 
 	public BigDecimal getRmm() {
@@ -21,12 +21,12 @@ public class RMMDataResponse {
 		this.rmm = rmm;
 	}
 
-	public BigDecimal getUpv() {
-		return upv;
+	public BigDecimal getUpb() {
+		return upb;
 	}
 
-	public void setUpv(BigDecimal upv) {
-		this.upv = upv;
+	public void setUpb(BigDecimal upb) {
+		this.upb = upb;
 	}
 
 }

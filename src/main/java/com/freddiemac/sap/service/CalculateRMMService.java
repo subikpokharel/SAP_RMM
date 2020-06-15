@@ -22,15 +22,15 @@ public class CalculateRMMService {
 	public RMMDataResponse saveData(RMMDataRequest request) {
 		RMM data = new RMM(request);
 		BigDecimal rmmValue = new BigDecimal("294");
-		BigDecimal upvValue = new BigDecimal("512");
+		BigDecimal upbValue = new BigDecimal("512");
 		data.setRmm(rmmValue);
-		data.setUpv(upvValue);
+		data.setUpb(upbValue);
 		data.setId(++count);
 		// System.out.println(data);
 
 		repository.save(data);
 
-		RMMDataResponse response = new RMMDataResponse(rmmValue, upvValue);
+		RMMDataResponse response = new RMMDataResponse(rmmValue, upbValue);
 
 		return response;
 
